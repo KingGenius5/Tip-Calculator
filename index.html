@@ -5,27 +5,32 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
 </head>
 
 <body>
 
   <article class="card">
-    <section class="container">
-      <h1><b>Bill</b></h1>
-      <input type="text" name="" value="">
-      <h1><b>Tip %</b></h1>
-      <input type="text" name="" value="">
-      <h1><b>Number of People</b></h1>
-      <input type="text" name="" value="">
-    </section>
-  </article>
-
-
-  <article class="card">
-    <section class="container">
-      <h1><b>Tip per person</b></h1>
-      <h1><b>Total per person</b></h1>
-    </section>
+    <div class="container">
+    <header>
+      <h1 id="title" class="text-center">Tip Calculator</h1>
+    </header>
+    <form action="javascript:void(calc())">
+      <input class="form-control" id="bill" type="text" placeholder="Total Bill">
+      <br>
+      <input class="form-control" id="split" type="text" placeholder="Number of payers">
+      <br>
+      <input class="form-control" id="tipperc" type="text" placeholder="Tip %">
+      <br>
+      <button class="btn btn-success btn-lg">Calculate</button>
+      <div class="results">
+        <p><strong>Tip:&nbsp; <span id="tip"></span></strong></p>
+        <p><strong>Total:&nbsp; <span id="total"></span></strong></p>
+        <p><strong>Split Total:&nbsp; <span id="splitTotal"></span></strong></p>
+      </div>
+    </form>
+    <br>
+  </div>
   </article>
 
 </body>
