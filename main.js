@@ -1,4 +1,4 @@
-let calc = function() {
+let calculateTip = function() {
  let bill = Number(document.getElementById('bill').value);
  let split = Number(document.getElementById('split').value)
  let tipperc = Number(document.getElementById('tipperc').value)
